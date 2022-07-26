@@ -81,8 +81,10 @@ class pcrPlate {
                     column = 0;
                 }
             }
-            row += 1;
-            column = 0;
+            if (column != 0){
+                row += 1;
+                column = 0;
+            }
         }
         return plate;
     }
